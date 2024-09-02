@@ -1,0 +1,23 @@
+[
+    {
+        "img": "assets/img-casas/casa-01.png",
+        "value": "Alugar R$ 2000",
+        "name": "Casa - Sobrado",
+        "location": "SP - SP/SP",
+        "details": "SOBRADO COM 5 DORMITÓRIOS SENDO 1 SUÍTE, ESCRITÓRIO, SALA DE ESTAR, SALA DE JANTAR, COZINHA"
+    },
+    {
+        "img": "assets/img-casas/casa-01.png",
+        "value": "Comprar R$ 2000",
+        "name": "Casa - Sobrado",
+        "location": "SP - SP/SP",
+        "details": "SOBRADO COM 5 DORMITÓRIOS SENDO 1 SUÍTE, ESCRITÓRIO, SALA DE ESTAR, SALA DE JANTAR, COZINHA"
+    },
+    {
+        "img": "assets/img-casas/casa-01.png",
+        "value": "Alugar R$ 3000",
+        "name": "Casa - Sobrado",
+        "location": "SP - SP/SP",
+        "details": "SOBRADO COM 5 DORMITÓRIOS SENDO 1 SUÍTE, ESCRITÓRIO, SALA DE ESTAR, SALA DE JANTAR, COZINHA"
+    }
+]

@@ -1,0 +1,37 @@
+/*HEADER*/
+header{
+    display: flex;
+}
+.header-nav-list{
+    display: flex;
+    list-style: none;
+}
+.header-icons-list{
+    display: flex;
+    list-style: none;
+}
+
+/*MAIN*/
+
+/*main-lancamentos*/
+.main-lancamentos{
+
+}
+.main-lancamentos-imoveis{
+    display: flex;
+}
+
+
+/*FOOTER*/
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-info-present-nav{
+    display: flex;
+    list-style: none;
+}
+.footer-copyright{
+    display: flex;
+    justify-content: space-between;
+}

@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Renan Molim Imóveis</title>
 </head>
 <body>
     <header>
-        <div>
-            <img src="assets/logo.svg">
+        <div class="header-logo">
+            <img src="assets/img-logo/logo.svg">
         </div>
-        <div>
-            <ul>
+        <div class="header-nav">
+            <ul class="header-nav-list">
                 <li><a>Nossa história</a></li>
                 <li><a>Comprar</a></li>
                 <li><a>Alugar</a></li>
@@ -19,11 +20,11 @@
                 <li><a>Fale Conosco</a></li>
             </ul>
         </div>
-        <div>
-            <ul>
-                <li><a><img src="assets/icons-instagram.svg" alt="ícone instagram"></a></li>
-                <li><a><img src="assets/icons-whatsapp.svg" alt="ícone whatsapp"></a></li>
-                <li><a><img src="assets/icons-facebook.svg" alt="ícone facebook"></a></li>
+        <div class="header-icons">
+            <ul class="header-icons-list">
+                <li><a><img src="assets/img-icones/icons-instagram.svg" alt="ícone instagram"></a></li>
+                <li><a><img src="assets/img-icones/icons-whatsapp.svg" alt="ícone whatsapp"></a></li>
+                <li><a><img src="assets/img-icones/icons-facebook.svg" alt="ícone facebook"></a></li>
             </ul>
         </div>
     </header>
@@ -31,33 +32,128 @@
     <main>
         <section> 
             <h1>Compre ou alugue</h1>
+
+            <div>
+                <div>
+                    <select>
+                        <option value="comprar">Comprar</option>
+                        <option value="Alugar">Alugar</option>
+                    </select>
+                </div>
+
+                <div>
+                    <select>
+                        <option value="" disabled selected>Escolha o tipo de imóvel</option>
+                        <option value="comprar">Comprar</option>
+                        <option value="Alugar">Alugar</option>
+                    </select>
+                </div>
+
+                <div>
+                    <form>
+                        <label for="rua"></label>
+                        <input type="text" id="rua" name="rua" placeholder="Digite rua, região ou bairro">
+                    </form>
+                </div>
+
+                <div>
+                    <form>
+                        <label for="filtros"></label>
+                        <input type="text" id="filtros" name="filtros" placeholder="Filtros">
+                    </form>
+                </div>
+                <button type="submit">Buscar Imóvel</button>
+            </div>
         </section>
 
-        <section>
-            <h2>Lançamentos</h2>
-            <p>Conheça novos empreendimentos</p>
+        <section class="main-lancamentos">
+            <div>
+                <h2>Lançamentos</h2>
+                <p>Conheça novos empreendimentos</p>
+            </div>
+
+            <div class="main-lancamentos-imoveis">
+                <div class="imovel">
+
+                </div>
+                <div class="imovel">
+
+                </div>
+                <div class="imovel">
+
+                </div>
+            </div>
+
         </section>
 
         <section>
             <h2>Mais Procurados</h2>
             <p>Conheça novos empreendimentos</p>
+
+            <div>
+                <div>
+                    <img src="assets/img-casas/casa-01.png" alt="imagem imovel">
+                    <h3>Alugar R$ 2000</h3>
+                    <p>Casa - Sobrado</p>
+                    <p>SP - SP/SP</p>
+                    <p>SOBRADO COM 5 DORMITÓRIOS SENDO 1 SUÍTE, ESCRITÓRIO, SALA DE ESTAR, SALA DE JANTAR, COZINHA</p>
+                </div>
+                <div>
+                    <img src="assets/img-casas/casa-01.png" alt="imagem imovel">
+                    <h3>Alugar R$ 2000</h3>
+                    <p>Casa - Sobrado</p>
+                    <p>SP - SP/SP</p>
+                    <p>SOBRADO COM 5 DORMITÓRIOS SENDO 1 SUÍTE, ESCRITÓRIO, SALA DE ESTAR, SALA DE JANTAR, COZINHA</p>
+                </div>
+                <div>
+                    <img src="assets/img-casas/casa-01.png" alt="imagem imovel">
+                    <h3>Alugar R$ 2000</h3>
+                    <p>Casa - Sobrado</p>
+                    <p>SP - SP/SP</p>
+                    <p>SOBRADO COM 5 DORMITÓRIOS SENDO 1 SUÍTE, ESCRITÓRIO, SALA DE ESTAR, SALA DE JANTAR, COZINHA</p>
+                </div>
+            </div>
         </section>
 
         <section>
             <h2>Imóveis Disponíveis</h2>
             <p>Conheça novos empreendimentos</p>
+
+            <div>
+                <div>
+                    <img src="assets/img-casas/casa-01.png" alt="imagem imovel">
+                    <h3>Alugar R$ 2000</h3>
+                    <p>Casa - Sobrado</p>
+                    <p>SP - SP/SP</p>
+                    <p>SOBRADO COM 5 DORMITÓRIOS SENDO 1 SUÍTE, ESCRITÓRIO, SALA DE ESTAR, SALA DE JANTAR, COZINHA</p>
+                </div>
+                <div>
+                    <img src="assets/img-casas/casa-01.png" alt="imagem imovel">
+                    <h3>Alugar R$ 2000</h3>
+                    <p>Casa - Sobrado</p>
+                    <p>SP - SP/SP</p>
+                    <p>SOBRADO COM 5 DORMITÓRIOS SENDO 1 SUÍTE, ESCRITÓRIO, SALA DE ESTAR, SALA DE JANTAR, COZINHA</p>
+                </div>
+                <div>
+                    <img src="assets/img-casas/casa-01.png" alt="imagem imovel">
+                    <h3>Alugar R$ 2000</h3>
+                    <p>Casa - Sobrado</p>
+                    <p>SP - SP/SP</p>
+                    <p>SOBRADO COM 5 DORMITÓRIOS SENDO 1 SUÍTE, ESCRITÓRIO, SALA DE ESTAR, SALA DE JANTAR, COZINHA</p>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <section>
-            <div>
-                <img>
-                <p></p>
-                <ul>
-                    <li><a><img src="assets/icons-instagram.svg" alt="ícone instagram"></a></li>
-                    <li><a><img src="assets/icons-whatsapp.svg" alt="ícone whatsapp"></a></li>
-                    <li><a><img src="assets/icons-facebook.svg" alt="ícone facebook"></a></li>
+        <section class="footer-info">
+            <div class="footer-info-present">
+                <img src="assets/img-logo/logo.svg" alt="imagem logo">
+                <p>Faça do seu dia algo extraordinário com Renan Molim Imóveis</p>
+                <ul class="footer-info-present-nav">
+                    <li><a><img src="assets/img-icones/icons-instagram.svg" alt="ícone instagram"></a></li>
+                    <li><a><img src="assets/img-icones/icons-whatsapp.svg" alt="ícone whatsapp"></a></li>
+                    <li><a><img src="assets/img-icones/icons-facebook.svg" alt="ícone facebook"></a></li>
                 </ul>                
             </div>
             <div>
@@ -92,10 +188,12 @@
 
         </section>
         
-        <section>
+        <section class="footer-copyright">
             <p>Renan Molim Imóveis Copyright  © 2024 - Todos os Direitos Reservados</p>
             <p>Políticas de Privacidade</p>
         </section>
     </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
