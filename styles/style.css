@@ -17,7 +17,7 @@ header{
 .main-lancamentos{
 
 }
-.main-lancamentos-imoveis{
+.main-lancamentos-imoveis, .main-trending-imoveis{
     display: flex;
 }
 
