@@ -4,6 +4,7 @@
 :root{
     --color01: #005B4D;
     --color02: #FFFFFF;
+    --color03: #F5E231;
 }
 
 body{
@@ -43,15 +44,43 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .main-search-title{
     font-size: 5rem;
     color: var(--color01);
+    padding-bottom: 3%;
 }
 .main-search-options{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--color02);
+    width: 60%;
     padding: 1%;
+}
+.main-search-options-contract-select{
+    padding: 5%;
+}
+.main-search-options-type-select{
+    padding: 2.5%;
+}
+.main-search-options-street-form{
+    
+}
+.main-search-options-street-form-input{
+    padding: 2.5%;
+}
+.main-search-options-filter{
+
+}
+.main-search-options-filter-input{
+    padding: 2.5%;
+}
+.main-search-options-button{
+    padding: 1%;
+    background-color: var(--color03);
+    border: 1px solid black;
 }
 
 /*main-lancamentos*/

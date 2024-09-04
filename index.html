@@ -35,35 +35,36 @@
             <h1 class="main-search-title">Compre ou alugue</h1>
 
             <div class="main-search-options">
-                <div>
-                    <select>
-                        <option value="comprar">Comprar</option>
+                <div class="main-search-options-contract">
+                    <select class="main-search-options-contract-select">
+                        <option class="" value="comprar">Comprar</option>
                         <option value="Alugar">Alugar</option>
                     </select>
                 </div>
 
-                <div>
-                    <select>
+                <div class="main-search-options-type">
+                    <select class="main-search-options-type-select">
                         <option value="" disabled selected>Escolha o tipo de imóvel</option>
                         <option value="comprar">Comprar</option>
                         <option value="Alugar">Alugar</option>
                     </select>
                 </div>
 
-                <div>
-                    <form>
+                <div class="main-search-options-street">
+                    <form class="main-search-options-street-form">
                         <label for="rua"></label>
-                        <input type="text" id="rua" name="rua" placeholder="Digite rua, região ou bairro">
+                        <input class="main-search-options-street-form-input" type="text" id="rua" name="rua" placeholder="Digite rua, região ou bairro">
                     </form>
                 </div>
 
-                <div>
-                    <form>
+                <div class="main-search-options-filter">
+                    <form class="main-search-options-filter-form">
                         <label for="filtros"></label>
-                        <input type="text" id="filtros" name="filtros" placeholder="Filtros">
+                        <input class="main-search-options-filter-input" type="text" id="filtros" name="filtros" placeholder="Filtros">
                     </form>
                 </div>
-                <button type="submit">Buscar Imóvel</button>
+
+                <button class="main-search-options-button" type="submit">Buscar Imóvel</button>
             </div>
         </section>
 
