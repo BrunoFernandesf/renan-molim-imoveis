@@ -1,19 +1,64 @@
+/*GERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root{
+    --color01: #005B4D;
+}
+
+body{
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
 /*HEADER*/
 header{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid var(--color01);
+}
+.header-nav{
+    width: 55%;
 }
 .header-nav-list{
     display: flex;
+    justify-content: space-between;
     list-style: none;
 }
 .header-icons-list{
     display: flex;
     list-style: none;
 }
+.header-icons-list-img{
+    width: 50%;
+}
 
 /*MAIN*/
+/*main-search*/
+.main-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-search-title{
+    font-size: 5rem;
+    color: var(--color01);
+}
+.main-search-options{
+    display: flex;
+}
 
 /*main-lancamentos*/
+.main-search{
+    background-image: url("../assets/img-background/Background.png");
+    background-size: cover;
+    height: 100vh;
+
+}
+
 .main-lancamentos{
 
 }
