@@ -3,6 +3,7 @@
 
 :root{
     --color01: #005B4D;
+    --color02: #FFFFFF;
 }
 
 body{
@@ -49,6 +50,8 @@ header{
 }
 .main-search-options{
     display: flex;
+    background-color: var(--color02);
+    padding: 1%;
 }
 
 /*main-lancamentos*/
