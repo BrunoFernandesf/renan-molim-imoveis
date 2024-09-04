@@ -1,4 +1,4 @@
-const imoveisRel = document.querySelectorAll(".imovel-lancamento");
+const imoveisRel = document.querySelectorAll(".imovel-release");
 const imoveisTren = document.querySelectorAll(".imovel-trending");
 const imoveisSale = document.querySelectorAll(".imovel-sale");
 
@@ -17,9 +17,9 @@ fetch("resources/json/imoveis.json")
         if (imoveisRel[index] && index < limitRelease){
             imoveisRel[index].innerHTML = `
             <img src="${imovel.img}" alt="${imovel.name}">
-            <h3>${imovel.name}</h3>
+            <h3>${imovel.value}</h3>
             <p>${imovel.location}</p>
-            <p>${imovel.value}</p>
+            <p>${imovel.name}</p>
             <p>${imovel.details}</p>
         `;
         }
@@ -33,9 +33,9 @@ fetch("resources/json/imoveis.json")
         if(imoveisTren[index] && index < limitTrend){
             imoveisTren[index].innerHTML = `
             <img src="${imovel.img}" alt="${imovel.name}">
-            <h3>${imovel.name}</h3>
+            <h3>${imovel.value}</h3>
             <p>${imovel.location}</p>
-            <p>${imovel.value}</p>
+            <p>${imovel.name}</p>
             <p>${imovel.details}</p>
         `;
         }
@@ -49,9 +49,9 @@ fetch("resources/json/imoveis.json")
         if(imoveisSale[index] && index < limitSale){
             imoveisSale[index].innerHTML = `
             <img src="${imovel.img}" alt="${imovel.name}">
-            <h3>${imovel.name}</h3>
+            <h3>${imovel.value}</h3>
             <p>${imovel.location}</p>
-            <p>${imovel.value}</p>
+            <p>${imovel.name}</p>
             <p>${imovel.details}</p>
         `;
         }

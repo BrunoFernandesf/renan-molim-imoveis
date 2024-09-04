@@ -14,12 +14,28 @@ body{
     font-size: 16px;
 }
 
+.main-release-text-title, .main-trending-text-title, .main-sale-text-title{
+    font-size: 3rem;
+    color: var(--color01);
+    padding: 5% 0% 5% 0% ;
+}
+
+.main-release-imoveis, .main-trending-imoveis, .main-sale-imoveis{
+    display: flex;
+}
+
 /*HEADER*/
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
     border-bottom: 5px solid var(--color01);
+}
+.header-logo{
+
+}
+.header-logo-img{
+    width: 75%;
 }
 .header-nav{
     width: 55%;
@@ -40,12 +56,15 @@ header{
 /*MAIN*/
 /*main-search*/
 .main-search{
+    background-image: url("../assets/img-background/Background.png");
+    background-size: cover;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
+
 .main-search-title{
     font-size: 5rem;
     color: var(--color01);
@@ -83,23 +102,47 @@ header{
     border: 1px solid black;
 }
 
-/*main-lancamentos*/
-.main-search{
-    background-image: url("../assets/img-background/Background.png");
-    background-size: cover;
-    height: 100vh;
-
-}
-
-.main-lancamentos{
-
-}
-.main-lancamentos-imoveis, .main-trending-imoveis, .main-sale-imoveis{
+/*main-releases*/
+.main-release{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imovel-release h3{
+    background-color: var(--color01);
+}
+
+/*main-trending*/
+.main-trending{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imovel-trending h3{
+    background-color: var(--color01);
+}
+
+/*main-sale*/
+.main-sale{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imovel-sale h3{
+    background-color: var(--color01);
 }
 
 
 /*FOOTER*/
+footer{
+    padding: 5% 0% 0% 0%;
+}
 .footer-info{
     display: flex;
     justify-content: space-around;
@@ -109,6 +152,7 @@ header{
     list-style: none;
 }
 .footer-copyright{
+    padding: 2% 0% 0% 0%;
     display: flex;
     justify-content: space-between;
 }
