@@ -5,6 +5,7 @@
     --color01: #005B4D;
     --color02: #FFFFFF;
     --color03: #F5E231;
+    --color04: #FFEFCA;
 }
 
 body{
@@ -18,6 +19,11 @@ body{
     font-size: 3rem;
     color: var(--color01);
     padding: 5% 0% 5% 0% ;
+}
+
+.main-release-text-p, .main-trending-text-p, .main-sale-text-p{
+    font-size: 1.5rem;
+    padding: 0% 0% 5% 0%;
 }
 
 .main-release-imoveis, .main-trending-imoveis, .main-sale-imoveis{
@@ -110,9 +116,34 @@ header{
     align-items: center;
     text-align: center;
 }
-.imovel-release h3{
-    background-color: var(--color01);
+.main-release-imoveis{
+    display: flex;
+    justify-content: space-between;
 }
+.imovel-release{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imovel-release img{
+    width: 100%;
+    border-radius: 10% 10% 0 0;
+}
+.imovel-release h3{
+    width: 100%;
+    background-color: var(--color01);
+    font-size: 2rem;
+    color: var(--color04);
+    padding: 5% 0 5% 0;
+    border-radius: 0% 0% 25px 25px;
+}
+.imovel-release p{
+    width: 75%;
+    text-align: center;
+}
+
 
 /*main-trending*/
 .main-trending{
@@ -122,8 +153,32 @@ header{
     align-items: center;
     text-align: center;
 }
+.main-trending-imoveis{
+    display: flex;
+    justify-content: space-between;
+}
+.imovel-trending{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imovel-trending img{
+    width: 100%;
+    border-radius: 10% 10% 0 0;
+}
 .imovel-trending h3{
+    width: 100%;
     background-color: var(--color01);
+    font-size: 2rem;
+    color: var(--color04);
+    padding: 5% 0 5% 0;
+    border-radius: 0% 0% 25px 25px;
+}
+.imovel-trending p{
+    width: 75%;
+    text-align: center;
 }
 
 /*main-sale*/
@@ -134,10 +189,33 @@ header{
     align-items: center;
     text-align: center;
 }
-.imovel-sale h3{
-    background-color: var(--color01);
+.main-sale-imoveis{
+    display: flex;
+    justify-content: space-between;
 }
-
+.imovel-sale{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imovel-sale img{
+    width: 100%;
+    border-radius: 10% 10% 0 0;
+}
+.imovel-sale h3{
+    width: 100%;
+    background-color: var(--color01);
+    font-size: 2rem;
+    color: var(--color04);
+    padding: 5% 0 5% 0;
+    border-radius: 0% 0% 25px 25px;
+}
+.imovel-sale p{
+    width: 75%;
+    text-align: center;
+}
 
 /*FOOTER*/
 footer{
