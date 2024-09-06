@@ -225,6 +225,13 @@ footer{
     display: flex;
     justify-content: space-around;
 }
+.footer-info-present{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .footer-info-present-nav{
     display: flex;
     list-style: none;
