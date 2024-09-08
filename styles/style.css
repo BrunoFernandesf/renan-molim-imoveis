@@ -6,6 +6,7 @@
     --color02: #FFFFFF;
     --color03: #F5E231;
     --color04: #FFEFCA;
+    --color05: #D4A94F;
 }
 
 body{
@@ -28,6 +29,10 @@ body{
 
 .main-release-imoveis, .main-trending-imoveis, .main-sale-imoveis{
     display: flex;
+}
+
+.footer-info-title{
+    color:  var(--color05);
 }
 
 /*HEADER*/
@@ -220,6 +225,7 @@ header{
 /*FOOTER*/
 footer{
     padding: 5% 0% 0% 0%;
+    background-color: var(--color01);
 }
 .footer-info{
     display: flex;
@@ -231,6 +237,9 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.footer-info-present-text{
+    color: var(--color05);
 }
 .footer-info-present-nav{
     display: flex;
