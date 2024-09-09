@@ -245,6 +245,17 @@ footer{
     display: flex;
     list-style: none;
 }
+.footer-info-menu, .footer-info-types, .footer-info-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-info-menu-ul, .footer-info-types-ul, .footer-info-contact-ul{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
 .footer-copyright{
     padding: 2% 0% 0% 0%;
     display: flex;
