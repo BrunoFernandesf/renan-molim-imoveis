@@ -1,0 +1,137 @@
+/*GERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root{
+    --color01: #005B4D;
+    --color02: #FFFFFF;
+    --color03: #F5E231;
+    --color04: #FFEFCA;
+    --color05: #D4A94F;
+    --color06: rgba(16, 48, 58, 75%);
+}
+
+body{
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid var(--color01);
+}
+.header-logo{
+
+}
+.header-logo-img{
+    width: 75%;
+}
+.header-nav{
+    width: 55%;
+}
+.header-nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.header-icons-list{
+    display: flex;
+    list-style: none;
+}
+.header-icons-list-img{
+    width: 50%;
+}
+
+/*MAIN*/
+/*main-background*/
+.main-background{
+    height: 75vh;
+    background-image: url("../assets/img-background/background-anunciar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+}
+.main-background-title{
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+/*main-register*/
+.main-register{
+    padding: 2% 0% 10% 0%;
+}
+.main-register-text{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color01);
+    padding: 0% 0% 5% 0%;
+}
+.main-register-data-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.main-register-data-form input{
+    border-radius: 15px;
+    border: 1px solid var(--color06);
+    background-color: var(--color06);
+    color: var(--color02);
+    font-size: 1rem;
+    width: 30%;
+    padding: 10px;
+}
+#submit{
+    margin: 1% 0% 0% 0%;
+    background-color: var(--color01);
+}
+::placeholder{
+    color: var(--color02);
+}
+
+/*FOOTER*/
+footer{
+    padding: 5% 0% 0% 0%;
+    background-color: var(--color01);
+}
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-info-present{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info-present-text{
+    color: var(--color05);
+}
+.footer-info-present-nav{
+    display: flex;
+    list-style: none;
+}
+.footer-info-menu, .footer-info-types, .footer-info-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-info-menu-ul, .footer-info-types-ul, .footer-info-contact-ul{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+.footer-copyright{
+    padding: 2% 0% 0% 0%;
+    display: flex;
+    justify-content: space-between;
+}
