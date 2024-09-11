@@ -8,6 +8,7 @@
     --color04: #FFEFCA;
     --color05: #D4A94F;
     --color06: rgba(16, 48, 58, 75%);
+    --color07: #25D366;
 }
 
 body{
@@ -90,7 +91,7 @@ header{
 }
 #submit{
     margin: 1% 0% 0% 0%;
-    background-color: var(--color01);
+    background-color: var(--color07);
 }
 ::placeholder{
     color: var(--color02);
