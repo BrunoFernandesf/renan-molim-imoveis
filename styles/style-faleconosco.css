@@ -1,0 +1,152 @@
+/*GERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root{
+    --color01: #005B4D;
+    --color02: #FFFFFF;
+    --color03: #F5E231;
+    --color04: #FFEFCA;
+    --color05: #D4A94F;
+    --color06: rgba(16, 48, 58, 75%);
+    --color07: #25D366;
+    --color08: #000000;
+    --color09: #F0CB63;
+}
+
+body{
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid var(--color01);
+}
+.header-logo{
+
+}
+.header-logo-img{
+    width: 75%;
+}
+.header-nav{
+    width: 55%;
+}
+.header-nav-list{
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav-list-itens a{
+    text-decoration: none;
+    color: var(--color08);
+}
+.header-icons-list{
+    display: flex;
+    list-style: none;
+}
+.header-icons-list-img{
+    width: 50%;
+}
+
+/*MAIN*/
+/*main-faleconosco*/
+.main-faleconosco {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0% 0% 0%;
+}
+.main-faleconosco-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    margin: 0% 5% 0% 0%;
+}
+.main-faleconosco-input-title{
+    font-size: 2rem;
+    color: var(--color08);
+}
+.main-faleconosco-input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+}
+.main-faleconosco-input-form-itens{
+    border-radius: 15px;
+    border: 1px solid var(--color06);
+    color: var(--color02);
+    background-color: var(--color06);
+    font-family: "Questrial", sans-serif;
+    padding: 2%;
+}
+::placeholder {
+    color: var(--color02);
+}
+#button {
+    color: var(--color02);
+    background-color: var(--color09);
+    border: var(--color09);
+    border-radius: 15px;
+    padding: 3%;
+}
+
+.map {
+    width: 350px;
+    height: 300px;
+}
+
+.main-faleconosco-contato-list{
+    display: flex;
+    flex-direction: column;
+}
+.main-faleconosco-contato-list-itens{
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+}
+
+
+/*FOOTER*/
+footer{
+    padding: 5% 0% 0% 0%;
+    background-color: var(--color01);
+}
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-info-present{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info-present-text{
+    color: var(--color05);
+}
+.footer-info-present-nav{
+    display: flex;
+    list-style: none;
+}
+.footer-info-menu, .footer-info-types, .footer-info-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-info-menu-ul, .footer-info-types-ul, .footer-info-contact-ul{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+.footer-copyright{
+    padding: 2% 0% 0% 0%;
+    display: flex;
+    justify-content: space-between;
+}
