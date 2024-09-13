@@ -3,66 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style-imoveis.css">
     <title>Renan Molim Imóveis</title>
 </head>
 <body>
     <header>
-        <div>
-            <img src="assets/logo.svg">
+        <div class="header-logo">
+            <img class="header-logo-img" src="assets/img-logo/logo.svg">
         </div>
-        <div>
-            <ul>
-                <li><a>Nossa história</a></li>
-                <li><a>Comprar</a></li>
-                <li><a>Alugar</a></li>
-                <li><a>Anunciar Imóvel</a></li>
-                <li><a>Fale Conosco</a></li>
+        <div class="header-nav">
+            <ul class="header-nav-list">
+                <li><a href="index.html">Nossa história</a></li>
+                <li><a href="imoveis.html">Comprar</a></li>
+                <li><a href="imoveis.html">Alugar</a></li>
+                <li><a href="anunciar.html">Anunciar Imóvel</a></li>
+                <li><a href="faleconosco.html">Fale Conosco</a></li>
             </ul>
         </div>
-        <div>
-            <ul>
-                <li><a><img src="assets/icons-instagram.svg" alt="ícone instagram"></a></li>
-                <li><a><img src="assets/icons-whatsapp.svg" alt="ícone whatsapp"></a></li>
-                <li><a><img src="assets/icons-facebook.svg" alt="ícone facebook"></a></li>
+        <div class="header-icons">
+            <ul class="header-icons-list">
+                <li><a><img class="header-icons-list-img" src="assets/img-icones/icons-instagram.svg" alt="ícone instagram"></a></li>
+                <li><a><img class="header-icons-list-img" src="assets/img-icones/icons-whatsapp.svg" alt="ícone whatsapp"></a></li>
+                <li><a><img class="header-icons-list-img" src="assets/img-icones/icons-facebook.svg" alt="ícone facebook"></a></li>
             </ul>
         </div>
     </header>
 
     <main>
-        <section> 
-            <h1>Compre ou alugue</h1>
-        </section>
+        <section class="main-container">
+            <div class="main-container-col1">
+                <div class="main-container-col1-title">
+                    <h1>FILTRAR</h1>
+                </div>
+                <div id="filter-1">
+                    <h2>Qual é o seu interesse?</h2>
+                    <select class="filter-aquis">
+                        <option>Comprar</option>
+                        <option>Alugar</option>
+                    </select>
+                </div>
+                <div id="filter-2">
+                    <h2>Qual é o tipo do imovel?</h2>
+                    <select>
+                        <option>Casa</option>
+                        <option>Apartamento</option>
+                        <option>Chácara</option>
+                    </select>
+                </div>
+                <div id="filter-3">
+                    <h2>Qual a localidade?</h2>
+                    <form>
+                        <input type="text" id="location" name="location" placeholder="Digite o bairro ou cidade">
+                        <label for="location"></label>
+                    </form>
+                </div>
+                <div class="filter-flex" id="filter-4">
+                    <div>
+                        <p>Preço mínimo</p>
+                        <form>
+                            <input type="text" id="price-min" name="price-min">
+                            <label for="price-min"></label>
+                        </form>
+                    </div>
+                    <div>
+                        <p>Preço máximo</p>
+                        <form>
+                            <input type="text" id="price-max" name="price-max">
+                            <label for="price-max"></label>
+                        </form>
+                    </div>
+                </div>
+                <div class="filter-flex" id="filter-5">
+                    <div>
+                        <p>Área mínimo</p>
+                        <form>
+                            <input type="text" id="area-min" name="area-min">
+                            <label for="area-min"></label>
+                        </form>
+                    </div>
+                    <div>
+                        <p>Área máxima</p>
+                        <form>
+                            <input type="text" id="area-max" name="area-max">
+                            <label for="area-max"></label>
+                        </form>
+                    </div>
+                </div>
+                <div id="filter-6">
+                    <h2>Quartos</h2>
+                    <div class="options">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4+</p>
+                    </div>
+                </div>
+                <div id="filter-7">
+                    <h2>Banheiros</h2>
+                    <div class="options">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4+</p>
+                    </div>
+                </div>
+                <div id="filter-8">
+                    <h2>Vagas</h2>
+                    <div class="options">
+                        <p>1</p>
+                        <p>2</p>
+                        <p>3</p>
+                        <p>4+</p>
+                    </div>
+                </div>
+                <div id="filter-9">
+                    <h2>Características especiais</h2>
+                    <div class="selection-options">
+                        <div>
+                            <input type="radio" id="churrasqueira" name="churrasqueira">
+                            <label for="churrasqueira">Churrasqueira</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="garagem-coberta" name="garagem-coberta">
+                            <label for="garagem-coberta">Garagem Coberta</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="mobiliado" name="mobiliado">
+                            <label for="mobiliado">Mobiliado</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="piscina" name="piscina">
+                            <label for="piscina">Piscina</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="varanda-gourmet" name="varanda-gourmet">
+                            <label for="varanda-gourmet">Varanda Gourmet</label>
+                        </div>
+                    </div>
+                </div>                
+            </div>
 
-        <section>
-            <h2>Lançamentos</h2>
-            <p>Conheça novos empreendimentos</p>
-        </section>
+            <div class="main-container-col2">
+                <div class="main-container-col2-divider1">
+                    <div class="imovel">
 
-        <section>
-            <h2>Mais Procurados</h2>
-            <p>Conheça novos empreendimentos</p>
-        </section>
+                    </div>
+                    <div class="imovel">
 
-        <section>
-            <h2>Imóveis Disponíveis</h2>
-            <p>Conheça novos empreendimentos</p>
+                    </div>
+                    <div class="imovel">
+
+                    </div>
+                    <div class="imovel">
+
+                    </div>
+                    <div class="imovel">
+
+                    </div>
+                </div>
+                <div class="main-container-col2-divider2">
+                    <div class="imovel">
+
+                    </div>
+                    <div class="imovel">
+
+                    </div>
+                    <div class="imovel">
+
+                    </div>
+                    <div class="imovel">
+
+                    </div>
+                    <div class="imovel">
+
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
     <footer>
-        <section>
-            <div>
-                <img>
-                <p></p>
-                <ul>
-                    <li><a><img src="assets/icons-instagram.svg" alt="ícone instagram"></a></li>
-                    <li><a><img src="assets/icons-whatsapp.svg" alt="ícone whatsapp"></a></li>
-                    <li><a><img src="assets/icons-facebook.svg" alt="ícone facebook"></a></li>
+        <section class="footer-info">
+            <div class="footer-info-present">
+                <img src="assets/img-logo/logo.svg" alt="imagem logo">
+                <p class="footer-info-present-text">Faça do seu dia algo extraordinário com Renan Molim Imóveis</p>
+                <ul class="footer-info-present-nav">
+                    <li><a><img src="assets/img-icones/icons-instagram.svg" alt="ícone instagram"></a></li>
+                    <li><a><img src="assets/img-icones/icons-whatsapp.svg" alt="ícone whatsapp"></a></li>
+                    <li><a><img src="assets/img-icones/icons-facebook.svg" alt="ícone facebook"></a></li>
                 </ul>                
             </div>
-            <div>
-                <h3>Institucional</h3>
-                <ul>
+            <div class="footer-info-menu">
+                <h3 class="footer-info-title">Institucional</h3>
+                <ul class="footer-info-menu-ul">
                     <li>Nossa história</li>
                     <li>Imóveis</li>
                     <li>Solicitar Imóvel</li>
@@ -70,9 +205,9 @@
                     <li>Fale Conosco</li>
                 </ul>
             </div>
-            <div>
-                <h3>Tipos de imóveis</h3>
-                <ul>
+            <div class="footer-info-types">
+                <h3 class="footer-info-title">Tipos de imóveis</h3>
+                <ul class="footer-info-types-ul">
                     <li>Apartamentos</li>
                     <li>Casas</li>
                     <li>Chácara</li>
@@ -81,21 +216,23 @@
                     <li>Sala Comercial</li>
                 </ul>
             </div>
-            <div>
-                <h3>Fale Conosco</h3>
-                <ul>
-                    <li>(11) 9 9999-9999</li>
-                    <li>contato@renanmolimimoveis.com</li>
-                    <li>Rua centro, Centro - São Paulo SP</li>
+            <div class="footer-info-contact">
+                <h3 class="footer-info-title">Fale Conosco</h3>
+                <ul class="footer-info-contact-ul">
+                    <li><img src="assets/img-icones/icons-whatsAmarelo.svg">(11) 9 9999-9999</li>
+                    <li><img src="assets/img-icones/icons-email.svg">contato@renanmolimimoveis.com</li>
+                    <li><img src="assets/img-icones/icons-map.svg">Rua centro, Centro - São Paulo SP</li>
                 </ul>
             </div>
 
         </section>
         
-        <section>
+        <section class="footer-copyright">
             <p>Renan Molim Imóveis Copyright  © 2024 - Todos os Direitos Reservados</p>
             <p>Políticas de Privacidade</p>
         </section>
     </footer>
+
+    <script src="scripts/scriptImoveis.js"></script>
 </body>
 </html>

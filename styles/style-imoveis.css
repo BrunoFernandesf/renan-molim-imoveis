@@ -1,0 +1,114 @@
+/*GERAL*/
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+:root{
+    --color01: #005B4D;
+    --color02: #FFFFFF;
+    --color03: #F5E231;
+    --color04: #FFEFCA;
+    --color05: #D4A94F;
+}
+
+body{
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.footer-info-title{
+    color:  var(--color05);
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 5px solid var(--color01);
+}
+.header-logo{
+
+}
+.header-logo-img{
+    width: 75%;
+}
+.header-nav{
+    width: 55%;
+}
+.header-nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.header-icons-list{
+    display: flex;
+    list-style: none;
+}
+.header-icons-list-img{
+    width: 50%;
+}
+
+
+/*MAIN*/
+.main-container {
+    display: flex;
+
+}
+
+/*filters*/
+.filter-flex {
+    display: flex;
+}
+.options {
+    display: flex;
+}
+.main-container-col1{
+    width: 30%;
+}
+.main-container-col2 {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*FOOTER*/
+footer{
+    padding: 5% 0% 0% 0%;
+    background-color: var(--color01);
+}
+.footer-info{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-info-present{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-info-present-text{
+    color: var(--color05);
+}
+.footer-info-present-nav{
+    display: flex;
+    list-style: none;
+}
+.footer-info-menu, .footer-info-types, .footer-info-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-info-menu-ul, .footer-info-types-ul, .footer-info-contact-ul{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-around;
+}
+.footer-copyright{
+    padding: 2% 0% 0% 0%;
+    display: flex;
+    justify-content: space-between;
+}
