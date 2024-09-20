@@ -53,7 +53,8 @@ header{
 /*MAIN*/
 .main-container {
     display: flex;
-
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 /*filters*/
@@ -65,13 +66,24 @@ header{
 }
 .main-container-col1{
     width: 30%;
+    border: 1px solid black;
+    padding: 2% 1% 5% 1%;
+    margin: 2% 0% 0% 0%;
 }
 .main-container-col2 {
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
 }
-
+.main-container-col2-divider1{
+    width: 50%;
+}
+.main-container-col2-divider2{
+    width: 50%;
+}
+.imovel{
+    padding: 5%;
+}
 
 /*FOOTER*/
 footer{
